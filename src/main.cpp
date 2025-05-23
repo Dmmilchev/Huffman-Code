@@ -13,7 +13,11 @@ int main() {
 
     const char* input_file2 = "/home/deyan/Desktop/huffman code compressor/data/random.txt";
     const char* output_file2 = "/home/deyan/Desktop/huffman code compressor/data/random.cmpr";
-    Compress::compress(input_file2, output_file2);
+
+    const char* input_file3 = "/home/deyan/Desktop/huffman code compressor/data/random_ascii.txt";
+    const char* output_file3 = "/home/deyan/Desktop/huffman code compressor/data/random_ascii.cmpr";
+
+    Compress::compress(input_file3, output_file3);
     std::string result = Compress::decompress(output_file2, input_file2);
     std::cout << result;
     
